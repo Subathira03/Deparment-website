@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .dropbtn {
+    background-color:white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+</style>
+
+<!--script>
+    function validateForm(){
+        let x=document.forms["myform"]["name"].value;
+        let a=document.forms["myform"]["rollno"].value;
+        let b=document.forms["myform"]["num"].value;
+        let c=document.forms["myform"]["mentor"].value;
+        let d=document.forms["myform"]["bg"].value;
+
+        if(x == a == b == c ==d ==""){
+            alert("Every details must be filled");
+            return false;
+        }
+    }
+
+</script>-->
+
+</head>
+<body>
+    
+    
+   <center>
+    <h2><b style="color:black">BLOOD DONATION REGISTRATION</b></h2>
+    <br><br>
+    <form name="myform" onsubmit="return validateForm()">
+    <table>
+        <tr><td><b><b>Name</b></b></td>
+        <td><input type="text" name="name" id="name" required ></td></tr>
+        <br>
+        <br>
+        <tr><td><b><b>Roll no</b></b></td>
+        <td><input type="text" name="rollno"  id="rollno" required ></td></tr>
+        <br>
+        <br>
+        <tr><td><b><b>Year</b></b></td>
+        <td><input type="number" name="num" id="num" required ></td></tr>
+        <br>
+        <br>
+        <tr><td><b><b>Mentor</b></td>
+        <td><input type="text" name="mentor" id="mentor" required ></td></tr>
+        <br>
+        <br>
+        <tr><td><b><b>Blood Group</b></b></td>
+        <td><input type="text" name="bg" id="bg" required ></td></tr>
+        <br>
+        <br>
+        <tr><td><input type="submit" value ="register"></td></tr>
+        
+    </table>
+</form>
+    
+</center>
+
+</body>
+</html>

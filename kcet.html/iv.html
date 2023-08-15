@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 3px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 30px;
+ 
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.exit{
+        float: left;
+      }
+</style>
+</head>
+<body>
+  <div class="exit">
+    <a target="#" href="index.html"> 
+    <img src="arrow.png" width="60" height="30"></a>
+  </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h5 class="animate-charcter" align="center">INDUSTRIAL VISIT</h5>
+          </div>
+        </div>
+      </div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="iv1.jpeg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="iv2.jpeg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="iv3.jpeg" style="width:100%">
+    
+  </div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<h3>Celestial V Solutions Contact Us : if you wish to be considered for Careers in CVS or check for our projects at Celestial V Solutions, please do not send a message, here<br> – instead, please complete Celestial V Solutions Contact Us Form, So that we<br> will contact you after our review of your submitted information.</h3>
+<h3>TECHNOLOGICS Global Pvt Ltd. headquartered in Bangalore, India. is established by technology pioneers having decades of experience across India & Middle <br>East in controls and automation industry. We offer a wide range of services, related to PLC SCADA, IBMS, LabVIEW, Building Automation, Home Automation, Embedded systems, ETAP Power, JAVA JSP, <br>Python, Device Driver, IOT & OPC for commercial, residential and Industrial sectors.</h3>
+</body>
+</html> 
